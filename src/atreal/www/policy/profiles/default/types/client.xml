@@ -2,19 +2,19 @@
 <object
     i18n:domain="atreal.www.policy"
     meta_type="Dexterity FTI"
-    name="Testimony"
+    name="client"
     xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
   <!-- Basic properties -->
   <property
       i18n:translate=""
-      name="title">Testimony</property>
+      name="title">client</property>
   <property
       i18n:translate=""
       name="description"></property>
 
   <property name="allow_discussion">False</property>
-  <property name="factory">Testimony</property>
+  <property name="factory">client</property>
   <property name="icon_expr"></property>
   <property name="link_target"></property>
 
@@ -30,15 +30,17 @@
   <property name="klass">plone.dexterity.content.Item</property>
   <property name="model_file"></property>
   <property name="model_source"></property>
-  <property name="schema">atreal.www.policy.interfaces.ITestimony</property>
+  <property name="schema">atreal.www.policy.client.IClient</property>
 
   <!-- Enabled behaviors -->
   <property name="behaviors">
-    <element value="plone.app.content.interfaces.INameFromTitle" />
+    <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
+    <element value="plone.app.content.interfaces.INameFromTitle"/>
+    <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
   </property>
 
   <!-- View information -->
-  <property name="add_view_expr">string:${folder_url}/++add++Testimony</property>
+  <property name="add_view_expr">string:${folder_url}/++add++client</property>
   <property name="immediate_view">view</property>
   <property name="default_view">view</property>
   <property name="default_view_fallback">False</property>

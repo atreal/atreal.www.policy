@@ -1,0 +1,17 @@
+<model xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns:i18n="http://xml.zope.org/namespaces/i18n" xmlns:lingua="http://namespaces.plone.org/supermodel/lingua" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:users="http://namespaces.plone.org/supermodel/users" xmlns="http://namespaces.plone.org/supermodel/schema">
+  <schema>
+    <field name="signature" type="zope.schema.TextLine">
+      <description/>
+      <title>Signature</title>
+    </field>
+    <field name="citation" type="zope.schema.Text">
+      <description/>
+      <title>Citation</title>
+    </field>
+    <field name="application" type="z3c.relationfield.schema.RelationChoice">
+      <description/>
+      <required>False</required>
+      <title>Application</title>
+    </field>
+  </schema>
+</model>

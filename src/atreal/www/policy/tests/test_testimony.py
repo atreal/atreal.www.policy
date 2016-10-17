@@ -22,16 +22,16 @@ class TestimonyIntegrationTest(unittest.TestCase):
         self.installer = api.portal.get_tool('portal_quickinstaller')
 
     def test_schema(self):
-        fti = queryUtility(IDexterityFTI, name='Testimony')
+        fti = queryUtility(IDexterityFTI, name='testimony')
         schema = fti.lookupSchema()
         self.assertEqual(ITestimony, schema)
 
     def test_fti(self):
-        fti = queryUtility(IDexterityFTI, name='Testimony')
+        fti = queryUtility(IDexterityFTI, name='testimony')
         self.assertTrue(fti)
 
     def test_factory(self):
-        fti = queryUtility(IDexterityFTI, name='Testimony')
+        fti = queryUtility(IDexterityFTI, name='testimony')
         factory = fti.factory
         obj = createObject(factory)
         self.assertTrue(ITestimony.providedBy(obj))
@@ -39,7 +39,7 @@ class TestimonyIntegrationTest(unittest.TestCase):
     def test_adding(self):
         obj = api.content.create(
             container=self.portal,
-            type='Testimony',
-            id='Testimony',
+            type='testimony',
+            id='testimony',
         )
         self.assertTrue(ITestimony.providedBy(obj))

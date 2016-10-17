@@ -1,0 +1,33 @@
+<model xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns:i18n="http://xml.zope.org/namespaces/i18n" xmlns:lingua="http://namespaces.plone.org/supermodel/lingua" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:users="http://namespaces.plone.org/supermodel/users" xmlns="http://namespaces.plone.org/supermodel/schema">
+  <schema>
+    <field name="baseline" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Baseline</title>
+    </field>
+    <field name="logo" type="plone.namedfile.field.NamedBlobImage">
+      <description/>
+      <title>Logo</title>
+    </field>
+    <field name="presentation" type="plone.app.textfield.RichText">
+      <description/>
+      <required>False</required>
+      <title>Pr&#233;sentation</title>
+    </field>
+    <field name="fonctionnalites" type="plone.app.textfield.RichText">
+      <description/>
+      <required>False</required>
+      <title>Fonctionnalit&#233;s</title>
+    </field>
+    <field name="atouts" type="plone.app.textfield.RichText">
+      <description/>
+      <required>False</required>
+      <title>Atouts</title>
+    </field>
+    <field name="plaquette" type="plone.namedfile.field.NamedBlobFile">
+      <description/>
+      <required>False</required>
+      <title>Plaquette</title>
+    </field>
+  </schema>
+</model>

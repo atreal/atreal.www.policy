@@ -1,0 +1,4 @@
+graft src/atreal
+graft docs
+include *.rst
+global-exclude *.pyc

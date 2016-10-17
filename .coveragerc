@@ -1,0 +1,6 @@
+[report]
+include =
+    src/atreal/*
+omit =
+    */test*
+    */upgrades/*

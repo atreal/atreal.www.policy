@@ -5,5 +5,7 @@
  <object name="client" meta_type="Dexterity FTI"/>
  <object name="team_member" meta_type="Dexterity FTI"/>
  <object name="testimony" meta_type="Dexterity FTI"/>
+ <object name="service" meta_type="Dexterity FTI"/>
+ <object name="frontpage" meta_type="Dexterity FTI"/>
  <!-- -*- extra stuff goes here -*- -->
 </object>

@@ -9,6 +9,10 @@
       <description/>
       <title>Logo</title>
     </field>
+    <field name="image_principale" type="plone.namedfile.field.NamedBlobImage">
+      <description/>
+      <title>Image principale</title>
+    </field>
     <field name="presentation" type="plone.app.textfield.RichText">
       <description/>
       <required>False</required>

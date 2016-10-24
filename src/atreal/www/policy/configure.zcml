@@ -30,6 +30,15 @@
       />
 
 
+  <genericsetup:registerProfile
+      name="dev"
+      title="atreal.www.policy"
+      directory="profiles/dev"
+      description="Installs the atreal.www.policy add-on - dev mode."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install_dev"
+      />
+
   <utility
       factory=".setuphandlers.HiddenProfiles"
       name="atreal.www.policy-hiddenprofiles" />

@@ -43,6 +43,8 @@ setup(
         'setuptools',
         'z3c.jbot',
         'plone.app.dexterity',
+        'atrealtheme.artificialreason',
+        'rapido.plone'
     ],
     extras_require={
         'test': [
@@ -50,9 +52,11 @@ setup(
             # Plone KGS does not use this version, because it would break
             # Remove if your package shall be part of coredev.
             # plone_coredev tests as of 2016-04-01.
-            'plone.testing>=5.0.0',
+            # 'plone.testing>=5.0.0',
             'plone.app.contenttypes',
             'plone.app.robotframework[debug]',
+            'collective.jsonify',
+            'collective.jsonmigrator'
         ],
     },
     entry_points="""

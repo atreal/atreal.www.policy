@@ -17,6 +17,10 @@ def post_install(context):
     """Post install script"""
     # Do something at the end of the installation of this package.
 
+def post_install_dev(context):
+    """Post install script"""
+    # Do something at the end of the installation of this package.
+
 
 def uninstall(context):
     """Uninstall script"""

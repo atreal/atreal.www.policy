@@ -23,20 +23,9 @@
   <element value="plone.app.content.interfaces.INameFromTitle"/>
   <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
  </property>
- <property name="schema"></property>
+ <property name="schema">atreal.www.policy.service.IService</property>
  <property
-    name="model_source">&lt;model xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns:i18n="http://xml.zope.org/namespaces/i18n" xmlns:lingua="http://namespaces.plone.org/supermodel/lingua" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:users="http://namespaces.plone.org/supermodel/users" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
-    &lt;schema&gt;
-      &lt;field name="texte" type="plone.app.textfield.RichText"&gt;
-        &lt;description/&gt;
-        &lt;title&gt;Texte&lt;/title&gt;
-      &lt;/field&gt;
-      &lt;field name="icon" type="zope.schema.TextLine"&gt;
-        &lt;description&gt;Font Awesome Icon Class&lt;/description&gt;
-        &lt;title&gt;icon&lt;/title&gt;
-      &lt;/field&gt;
-    &lt;/schema&gt;
-  &lt;/model&gt;</property>
+    name="model_source"></property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>
  <alias from="(Default)" to="(dynamic view)"/>

@@ -56,7 +56,8 @@ setup(
             'plone.app.contenttypes',
             'plone.app.robotframework[debug]',
             'collective.jsonify',
-            'collective.jsonmigrator'
+            'collective.jsonmigrator',
+            'collective.easyform'
         ],
     },
     entry_points="""

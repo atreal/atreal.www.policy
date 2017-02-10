@@ -44,7 +44,8 @@ setup(
         'z3c.jbot',
         'plone.app.dexterity',
         'atrealtheme.artificialreason',
-        'rapido.plone'
+        'rapido.plone',
+        'collective.easyform'
     ],
     extras_require={
         'test': [
@@ -57,7 +58,6 @@ setup(
             'plone.app.robotframework[debug]',
             'collective.jsonify',
             'collective.jsonmigrator',
-            'collective.easyform'
         ],
     },
     entry_points="""
